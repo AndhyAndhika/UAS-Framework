@@ -1,0 +1,680 @@
+@import url("font.css");
+
+/* tool */
+.bg-softgrey {
+    background-color: #3c9999;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Raleway";
+}
+
+body {
+    min-height: 100vh;
+}
+
+.font-white {
+    color: #ffffff;
+}
+
+.font-yellow {
+    color: #ff6d19;
+}
+
+/* APP */
+#app {
+    position: relative;
+}
+
+/* MAIN */
+#main {
+    margin-left: 0px;
+    /* width: calc(100% - 290px); */
+    background-color: #f7faff;
+    min-height: 100vh;
+    width: 100%;
+    transition: margin-left 0.4s ease-out;
+}
+#main .main-content {
+    padding: 0rem 1.5rem;
+    min-height: 100vh;
+    /* margin-bottom: 0px; */
+    /* margin-top: 70px; */
+    /* width:calc(100%-290px); */
+}
+
+/* #main .nav{
+  top: 0;
+  height: 100px;
+  width: 100%;
+  background-color: #F7FAFF;
+  /* position: fixed; */
+
+#main .nav .toggle-menu {
+    /* margin-top: 2rem; */
+    margin: 25px 15px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+#main .main-content {
+    /* margin-top: 70px; */
+    height: 100%;
+    padding: 2rem 1.5rem;
+    display: flex;
+    align-items: center;
+}
+#main .main-content .text {
+    color: #11101d;
+    font-size: 35px;
+}
+
+#main .main-content .text {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/* COLOR */
+.color-primary {
+    color: #5a8dee;
+}
+
+.color-secondary {
+    color: #475f7b;
+}
+
+.color-success {
+    color: #39da8a;
+}
+
+.color-danger {
+    color: #ff5b5c;
+}
+
+.color-warning {
+    color: #fdac41;
+}
+
+.color-info {
+    color: #00cfdd;
+}
+
+.color-dark {
+    color: #222f3e;
+}
+
+.color-light {
+    color: #a3afbd;
+}
+
+.color-link {
+    color: #2178d1;
+}
+
+.bg-white {
+    color: #ffffff;
+}
+
+.head-dtl {
+    background-color: #b4b4b4;
+}
+
+/* Navbar */
+
+nav {
+    margin: auto;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    position: static;
+    /* background-color: #000080; */
+    background: #000080; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to bottom,
+        #5151c2,
+        #000080
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to bottom,
+        #5151c2,
+        #000080
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+ul {
+    list-style-type: none;
+    /* margin-left: 330px; */
+    max-width: 100%;
+    display: flex;
+    margin-left: -12rem;
+    /* background-color: #2194e3; */
+}
+
+/* li {
+    float: left;
+} */
+li a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 4px 15px;
+    text-decoration: none;
+}
+
+/* li a:hover {
+  background-color: rgb(81, 219, 178);
+} */
+.navbarimg {
+    margin-top: 3.6px;
+    /* margin-left: 5px; */
+    height: 57px;
+    margin-bottom: 4px;
+    /* width: 250px; */
+}
+.rectangle-logo {
+    /* position: absolute; */
+    /* width: 275px; */
+
+    /* left:20.53px;
+  top: 13.80px; */
+    background: #ffffff;
+    background: -webkit-linear-gradient(
+        to bottom,
+        #ffffff,
+        #ebebf3
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to bottom,
+        #ffffff,
+        #ebebf3
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    margin: 4px 0px 5px 0px;
+}
+
+.shift {
+    /* margin-top: 30px; */
+    /* margin: 10px 0px 0px 330px; */
+    width: 200px;
+    font-size: xx-large;
+    font-weight: 500;
+    letter-spacing: 6;
+    color: #ffffff;
+    /* border-bottom: 5px; */
+}
+
+#MyClockDisplay {
+    /* position: absolute; */
+    /* height: 43px; */
+    width: 250px;
+
+    /* left: 619px;
+
+  top: 6px; */
+
+    font-family: Kameron;
+    font-size: 30px;
+    font-weight: 700;
+    /* line-height: 43px; */
+    letter-spacing: 0.1em;
+    text-align: center;
+    /* margin-left: 550px; */
+}
+
+.time {
+    background: #44b1b8;
+    background: -webkit-linear-gradient(
+        to bottom,
+        #44b1b8,
+        #2c8d94
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to bottom,
+        #44b1b8,
+        #2c8d94
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 0px 0px 5px 5px;
+    outline: 5px;
+}
+
+.time1 {
+    background-color: #44b1b8;
+}
+
+.rectangle_cloclk1 {
+    position: absolute;
+    width: 225px;
+    height: 40px;
+    /* left:20.53px;
+  top: 13.80px; */
+    background: #249299;
+    border-radius: 0px 10px 10px 0px;
+    margin: 1.5px 0px 0px 0px;
+}
+
+.nrp {
+    /* width: calc(100%-50px); */
+    width: 150px;
+    margin: 0px 10px 0px 10px;
+}
+
+/* .nrp-child{
+
+} */
+
+.mesin {
+    text-align: center;
+    width: auto;
+    /* height: px; */
+    margin-right: 0;
+    font-size: 28px;
+}
+
+.information {
+    margin-top: 7px;
+}
+
+.information i {
+    color: white;
+}
+
+.choose_machine {
+    letter-spacing: 4px;
+}
+
+.machine {
+    background: #44b1b8;
+    background: -webkit-linear-gradient(
+        to bottom,
+        #44b1b8,
+        #2c8d94
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to bottom,
+        #44b1b8,
+        #2c8d94
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 0px 0px 5px 5px;
+    outline: 5px;
+    /* height: 50px; */
+}
+
+/* Footer */
+
+footer {
+    left: 0;
+    /* bottom: 4; */
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    /* margin-bottom: 0px; */
+    width: 100%;
+    position: relative;
+    background-color: #000080;
+}
+
+/* Preparation Melting */
+.buttonssssss {
+    height: 250px;
+    width: 100%;
+}
+
+a .big-font {
+    width: 99.8%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: "-";
+    letter-spacing: 0.15em;
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 230px;
+}
+
+/* LHP Melting */
+
+.card_stok-molten .card-body,
+.card_total-chg .card-body {
+    margin-top: -2rem;
+    margin-bottom: -3rem;
+}
+
+.card_stok-molten .card-header,
+.card_total-chg .card-header {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.stok_molten {
+    font-size: 4rem;
+}
+
+.total_charging {
+    font-size: 4rem;
+}
+
+.card-ingot .card-body,
+.card-scrap .card-body {
+    /* margin-top : -1rem; */
+    margin-bottom: 0.5rem;
+}
+
+.card-ingot .card-body p,
+.card-scrap .card-body p {
+    font-size: 2.75rem;
+}
+.input_berat {
+    height: 8rem;
+    width: 100%;
+    margin: 0;
+    font-size: 4rem;
+}
+
+/* LHP FORKLIFT */
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /*========== Colors Battery Molten==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --gradient-color-red: linear-gradient(
+        90deg,
+        hsl(7, 89%, 46%) 15%,
+        hsl(11, 93%, 68%) 100%
+    );
+    --gradient-color-orange: linear-gradient(
+        90deg,
+        hsl(22, 89%, 46%) 15%,
+        hsl(54, 90%, 45%) 100%
+    );
+    --gradient-color-yellow: linear-gradient(
+        90deg,
+        hsl(54, 89%, 46%) 15%,
+        hsl(92, 90%, 45%) 100%
+    );
+    --gradient-color-green: linear-gradient(
+        90deg,
+        hsl(92, 89%, 46%) 15%,
+        hsl(92, 90%, 68%) 100%
+    );
+    --text-color: #fff;
+    /* --body-color: hsl(0, 0%, 11%); */
+    /* --container-color: hsl(0, 0%, 9%); */
+    --container-color: hsl(0, 0%, 100%);
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Rubik", sans-serif;
+
+    --biggest-font-size: 2.5rem;
+    --normal-font-size: 0.938rem;
+    --smaller-font-size: 0.75rem;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 968px) {
+    :root {
+        --biggest-font-size: 2.75rem;
+        --normal-font-size: 1rem;
+        --smaller-font-size: 0.813rem;
+    }
+}
+
+/*=============== PRE FORKLIFT ===============*/
+a .font-forklift {
+    font-size: 50px;
+    letter-spacing: 0.15em;
+    margin-top: 70px;
+}
+
+a .font-forklift10 {
+    font-size: 45px;
+    letter-spacing: 0.15em;
+    margin-top: 70px;
+}
+
+.button-prep-fork {
+    height: 250px;
+    /* width: 27%; */
+}
+
+/* Responsive  */
+@media screen and (max-width: 1280px) {
+    a .font-forklift {
+        font-size: 35px;
+    }
+
+    a .font-forklift10 {
+        font-size: 30px;
+        letter-spacing: 0.15em;
+        margin-top: 70px;
+    }
+    .button-prep-fork {
+        height: 200px;
+        /* width: 27%; */
+    }
+}
+
+/* Settings  */
+.font-settings {
+    font-size: 50px;
+    letter-spacing: 0.5rem;
+    margin-top: 35px;
+}
+
+/* Imin Tablet 1 */
+@media only screen and (max-width: 1280px) {
+    #MyClockDisplay {
+        width: 225px;
+    }
+
+    .nrp {
+        width: 125%;
+        margin-left: -10px;
+        margin-right: 43px;
+    }
+    .card-material {
+        margin-bottom: 49px;
+    }
+    .stok_molten {
+        font-size: 4rem;
+    }
+    .total_charging {
+        font-size: 4rem;
+    }
+    .card_stok-molten .card-header,
+    .card_total-chg .card-header {
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .card-ingot,
+    .card-scrap {
+        margin-top: 2rem;
+    }
+}
+
+/* Imin Tablet 2*/
+@media only screen and (max-width: 1210px) {
+    .nrp {
+        width: 100%;
+        margin-left: -5px;
+        margin-right: 15px;
+    }
+}
+/* Samsung Galaxy Tablet */
+
+@media only screen and (max-width: 1000px) {
+    /* Nav */
+    nav {
+        height: 60px;
+    }
+    .navbarimg {
+        height: 40px;
+        width: 155px;
+    }
+
+    .rectangle-logo {
+        height: 42px;
+        margin-top: 0.25rem;
+    }
+
+    .shift {
+        width: 115px;
+        font-size: x-large;
+    }
+
+    #MyClockDisplay {
+        width: 140px;
+        font-size: 20px;
+    }
+
+    .nrp {
+        width: 100%;
+    }
+
+    .machine {
+        height: 50px;
+    }
+
+    .mesin {
+        font-size: 19px;
+        margin-top: 3px;
+    }
+
+    /* Prep Melting */
+    a .big-font {
+        font-size: 50px;
+    }
+
+    /* Melting */
+    .input_berat {
+        font-size: 4rem;
+    }
+    .stok_molten {
+        font-size: 3rem;
+        /* margin: 2px 0px 2px 0px; */
+    }
+    .card_stok-molten .card-header,
+    .card_total-chg .card-header {
+        font-size: 1.75rem;
+    }
+    .card_stok-molten .card-body,
+    .card_total-chg .card-body {
+        margin-top: -1rem;
+        margin-bottom: -2rem;
+    }
+
+    .total_charging {
+        font-size: 3rem;
+    }
+
+    .card-ingot .card-body p,
+    .card-scrap .card-body p {
+        font-size: 2.5rem;
+    }
+}
+
+/* TEXT KEDIP IN HERE */
+@keyframes font-blinking {
+    0% {
+        color: red;
+    }
+    50% {
+        color: orange;
+    }
+    100% {
+        color: red;
+    }
+}
+@-webkit-keyframes font-blinking {
+    0% {
+        color: red;
+    }
+    50% {
+        color: orange;
+    }
+    100% {
+        color: red;
+    }
+}
+.font-blinking {
+    -webkit-animation: font-blinking 1s linear infinite;
+    -moz-animation: font-blinking 1s linear infinite;
+    animation: font-blinking 1s linear infinite;
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Backgorund Part Casting */
+.bg-part {
+    /* background-image: url("/img/parts/Pipe Air Inlet ML288384.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    /* background-size: cover; */
+    width: 100%;
+    height: auto;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+area {
+    display: block;
+    outline: none;
+}
+
+area:hover {
+    cursor: pointer;
+    color: #11101d;
+}
+
+area:active {
+    background-color: #ccc;
+}
+
+/* SETTINGS */
+
+.bg-orange {
+    background-color: #f2921d;
+    border-color: #f2921d;
+    color: #f2921d;
+}
+
+.bg-ungu {
+    background-color: #be6db7;
+    border-color: #be6db7;
+    color: #be6db7;
+}
+
+.bg-merahBata {
+    background-color: #a84448;
+    border-color: #a84448;
+    color: #a84448;
+}
+
+.bg-silver {
+    background-color: #dddddd;
+    border-color: #dddddd;
+    color: #dddddd;
+}

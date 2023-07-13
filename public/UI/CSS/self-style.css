@@ -1,0 +1,218 @@
+
+.bg-orange {
+    background-color: #f2921d;
+    color: #f2921d;
+}
+
+.bg-ungu {
+    background-color: #be6db7;
+    color: #be6db7;
+}
+
+.bg-merahBata {
+    background-color: #a84448;
+    color: #a84448;
+}
+
+.bg-silver {
+    background-color: #dddddd;
+    color: #dddddd;
+}
+
+.img-line-casting {
+    margin-top: 5%;
+    height: auto;
+    width: 100%;
+}
+.card-lineCasting {
+    position: relative;
+}
+.child-lineCasting {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
+    /* background-color: #555; */
+    /* color: white; */
+    /* font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer; */
+    /* border-radius: 5px;
+    text-align: center; */
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.font-white {
+    color: #ffffff;
+}
+
+.prod-menu .card {
+    display: flex;
+    flex: 1;
+    flex-basis: 300px;
+    flex-grow: 0;
+    height: 100%;
+    width: 100%;
+    background: #f7faff;
+    /* border: 2px solid #fff; */
+    box-shadow: 0px 4px 7px #00000069;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    overflow: hidden;
+    position: relative;
+}
+.prod-menu .card img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+}
+.descriptions {
+    position: absolute;
+    /* top:0px;
+  left:0px; */
+    background-color: rgba(7, 11, 12, 0.555);
+    width: 100%;
+    height: 100%;
+    transition: all 0.7s ease-in-out;
+    /* padding: 20px; */
+    box-sizing: border-box;
+    clip-path: circle(0% at 100% 100%);
+}
+.prod-menu .card:hover .descriptions {
+    left: 0px;
+    transition: all 0.7s ease-in-out;
+    clip-path: circle(75%);
+}
+.prod-menu .card:hover {
+    transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+    transform: scale(0.97);
+}
+.prod-menu .card:hover img {
+    transition: all 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    transform: scale(1.6) rotate(20deg);
+    filter: blur(1px);
+}
+
+.descriptions .font-desc {
+    letter-spacing: 8px;
+    margin-top: 8%;
+    /* font-weight: 600; */
+}
+
+sup {
+    color: red;
+}
+
+.switch-field {
+    display: flex;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+.switch-field input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.switch-field label {
+    background-color: #e4e4e4;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    padding: 8px 16px;
+    margin-right: -1px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3),
+        0 1px rgba(255, 255, 255, 0.1);
+    transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+    cursor: pointer;
+}
+
+.switch-field input:checked + label {
+    background-color: #a5dc86;
+    box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+    border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+    border-radius: 0 4px 4px 0;
+}
+
+.blinker {
+    animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* FLIP CARD IN HERE */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    /* position: relative; */
+    /* width: 100%;
+    height: 100%; */
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #ffffff;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+}
