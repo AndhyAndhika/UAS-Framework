@@ -25,7 +25,7 @@
               <li class="list-group-item">12 Person</li>
               <li class="list-group-item">See Details</li>
             </ul>
-        </div> --}}
+        </div> 
 
         <div class="card bg-primary">
             <ul class="list-group list-group-flush bg-primary ">
@@ -48,6 +48,6 @@
     </div>
     <div class="col-3">
 
-    </div>
+    </div>--}}
 </div>
 @endsection
